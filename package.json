@@ -11,15 +11,6 @@
     "./config": "./config/index.js",
     "./styles/*": "./styles/*"
   },
-  "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0",
-    "next": "^14.0.0 || ^15.0.0",
-    "framer-motion": ">=11.0.0",
-    "lucide-react": ">=0.400.0",
-    "next-auth": ">=4.0.0",
-    "sonner": ">=1.0.0"
-  },
   "keywords": [
     "inspire",
     "english",
