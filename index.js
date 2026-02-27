@@ -72,3 +72,17 @@ export {
   useTheme,
   useFeature,
 } from "./lib/contexts/AppConfigContext";
+
+// Affiliate Tracking
+export { default as AffiliateTracker } from "./lib/affiliate/AffiliateTracker";
+export { default as useAffiliateAttribution } from "./lib/affiliate/useAffiliateAttribution";
+export {
+  storeAttribution,
+  getAttribution,
+  clearAttribution,
+  hasAttribution,
+  getStripeAffiliateMetadata,
+  buildAffiliateURL,
+  REFERRAL_PARAMS,
+  DEFAULT_ATTRIBUTION_DAYS,
+} from "./lib/affiliate/affiliateUtils";
