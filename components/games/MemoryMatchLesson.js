@@ -467,7 +467,7 @@ export default function MemoryMatchLesson({
         </div>
       )}
 
-      <div className="flex flex-col lg:flex-row justify-center lg:items-start gap-10 w-full max-w-7xl">
+      <div className="flex flex-col lg:flex-row justify-center gap-10 w-full max-w-7xl">
         {/* Game Grid */}
         <div className={`grid ${gridCols} gap-2 sm:gap-3 px-2 sm:px-0 pt-4`}>
           {cards.map((card, i) => {
@@ -555,7 +555,7 @@ export default function MemoryMatchLesson({
 
         {/* Matched Pairs Display */}
         {matchedPairs.length > 0 && (
-          <div className="flex-shrink-0 w-full lg:w-80 lg:sticky lg:top-4">
+          <div className="flex-shrink-0 w-full lg:w-auto">
             <div className="text-xs text-center lg:text-left text-gray-500 dark:text-gray-400 font-semibold mb-3">
               {t.matchedPairs} ({matchedPairs.length})
             </div>
@@ -628,11 +628,7 @@ export default function MemoryMatchLesson({
             </div>
           </div>
         </div>
-      ) : (
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-7xl">
-          {/* Game Grid */}
-        </div>
-      )}
+      ) : null}
 
       <div className="flex gap-4 sm:gap-8 text-center">
         <div className="bg-gray-50 dark:bg-accent-900/20 px-3 sm:px-4 py-2 rounded-lg">
