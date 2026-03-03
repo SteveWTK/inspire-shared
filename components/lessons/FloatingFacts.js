@@ -58,7 +58,7 @@ export default function FloatingFacts({
   const { label, value } = parseFactLabel(currentFact);
 
   const content = (
-    <div className={`mx-auto ${className}`}>
+    <div className={`relative mx-auto pointer-events-auto ${className}`}>
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-primary-200 dark:border-primary-700 overflow-hidden">
         {/* Header */}
         <div className="bg-primary-500 px-4 py-2 flex items-center justify-between">
@@ -103,8 +103,8 @@ export default function FloatingFacts({
         )}
       </div>
 
-      {/* Subtle pulsing glow effect */}
-      <div className="absolute inset-0 bg-primary-400/20 dark:bg-primary-600/20 rounded-xl blur-xl -z-10 animate-pulse" />
+      {/* Subtle pulsing glow effect - pointer-events-none ensures it doesn't block clicks */}
+      <div className="absolute inset-0 bg-primary-400/20 dark:bg-primary-600/20 rounded-xl blur-xl -z-10 animate-pulse pointer-events-none" />
     </div>
   );
 
